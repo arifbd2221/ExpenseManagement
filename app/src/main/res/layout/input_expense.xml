@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/input_layout"
+        android:background="@drawable/bg"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:elevation="5dp"
+            android:id="@+id/toolbar"
+            ></android.support.v7.widget.Toolbar>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="56dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expense Title"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/expense_title"
+                    android:fontFamily="sans-serif"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Last Edited Time "
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:drawableRight="@drawable/timer"
+                        android:paddingRight="45dp"
+                        android:maxLines="1"
+                        android:fontFamily="sans-serif"
+                        />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/time"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/colorAccent"
+                        android:text="date and time"
+                        android:maxLines="2"
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/setImage"
+                    android:src="@drawable/aboutus"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/setImage"
+                    >
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/id1"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edit_cost"
+                            android:hint="Amount"
+                            android:inputType="number"
+                            android:textColorHint="@color/bg_screen1"
+                            android:drawableLeft="@drawable/amount"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:text="Save"
+                        android:fontFamily="sans-serif"
+                        android:id="@+id/save"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/id1"
+                        android:background="@drawable/white_rounded_button"
+                        />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/id1"
+                        android:id="@+id/id2"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/edit_budget"
+                            android:inputType="number"
+                            android:hint="Add Budget"
+                            android:textColorHint="@color/bg_screen1"
+                            android:drawableLeft="@drawable/amount"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_below="@+id/id2"
+                        android:layout_toRightOf="@+id/save"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:id="@+id/deduct_budget"
+                            android:hint="Deduct Budget"
+                            android:textColorHint="@color/bg_screen1"
+                            android:drawableLeft="@drawable/amount"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="126dp"
+        fab:fab_addButtonColorNormal="@color/white"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonPlusIconColor="@color/half_black"
+        fab:fab_addButtonSize="mini"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="right"
+        android:layout_gravity="bottom|right"
+        >
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_title="Label on the right"
+            fab:fab_colorPressed="@color/white_pressed"
+            app:fab_icon="@drawable/camera"
+            app:fab_size="mini"
+            android:id="@+id/action1"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_title="Another one on the right"
+            fab:fab_colorPressed="@color/white_pressed"
+            app:fab_icon="@drawable/gallery"
+            app:fab_size="mini"
+            android:id="@+id/action2"
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+</FrameLayout>

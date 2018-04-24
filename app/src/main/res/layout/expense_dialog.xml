@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:id="@+id/id"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/captcha1"
+        android:id="@+id/image"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/editor_shape"
+        android:layout_marginTop="10dp"
+        android:id="@+id/captcha"
+        android:hint="Write down the above code"
+        android:paddingLeft="10dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/editor_shape"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email"
+        android:hint="Enter Your Email"
+        android:paddingLeft="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="25dp"
+        android:background="@drawable/white_rounded_button"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:id="@+id/password"
+        />
+
+
+
+</LinearLayout>

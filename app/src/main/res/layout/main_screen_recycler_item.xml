@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="15dp"
+    >
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/expense_title"
+        android:text="expense title"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/expense_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_centerInParent="true"
+        android:progress="50"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/progressbar"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved 200$"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/left_money"
+            android:layout_weight="2"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget 1000$"
+            android:id="@+id/budget"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

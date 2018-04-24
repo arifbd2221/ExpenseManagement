@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.countonit.user.swipetabpractice"
+    android:versionCode="4">
+
+    <uses-sdk
+        android:maxSdkVersion="26"
+        android:minSdkVersion="15"
+        tools:overrideLibrary="com.github.pavlospt.roundedletterview, com.sdsmdg.harjot.rotatingtext" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconimage"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconimage"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAfvOtXrj24OTDeitNHVBYpNhXCyhlq0SY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true" />
+        <activity
+            android:name=".FeedBack"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".RootScreen"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="fullSensor"
+
+            />
+        <activity
+            android:name=".Custom_Report"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".BarChartG"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true" />
+        <activity
+            android:name=".Payee"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+             />
+        <activity
+            android:name=".TodayReport"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".PayeeList"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Payer"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="fullSensor"
+
+            />
+        <activity
+            android:name=".PayerList"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".TakeExpenseInput"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Create_Expense"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".colorpicker.Setting"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true"
+            />
+        <activity
+            android:name=".About"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Tools"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Help"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".Take_Income_Info"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true" />
+        <activity
+            android:name=".ExpenseGallery"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <activity
+            android:name=".Privacy"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".Loggin_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateExpenseInput"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".NotificationView"
+            android:enabled="true" >
+        </service>
+
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:configChanges="orientation|screenSize"
+            android:process=":remote"
+            android:enabled="true"
+            android:exported="true"
+            ></receiver>
+
+
+    </application>
+
+</manifest>

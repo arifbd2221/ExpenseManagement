@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="5dp"
+        android:id="@+id/toolbar2"
+        >
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/bg"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+    <EditText
+        android:id="@+id/payee_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Name *"
+        android:drawableLeft="@drawable/accountname"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_input_amount"
+            android:layout_marginTop="10dp"
+            >
+
+   <EditText
+        android:id="@+id/payee_amount"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Amount *"
+        android:inputType="number"
+        android:drawableLeft="@drawable/amount"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+
+        />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/payee_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="Pick A Contact Number"
+            android:layout_gravity="center"
+            android:background="@color/bg_screen4"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:id="@+id/date"
+            >
+
+
+            <TextView
+                android:id="@+id/payee_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="2017/09/09"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                />
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/daterange"
+                android:id="@+id/id1"
+                android:layout_toRightOf="@+id/payee_date"
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/save"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/white_rounded_button"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="        It is an Entity from Whom You Borrowed Any Amount"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:textColor="@color/dot_light_screen4"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(When This Amount Return By You)"
+            android:layout_gravity="center"
+            android:textColor="@color/dot_light_screen4"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="You Can Add It To Your Expense ***"
+            android:textColor="@color/dot_light_screen4"
+            />
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

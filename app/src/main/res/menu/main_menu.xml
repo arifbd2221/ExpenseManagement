@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/expense"
+        android:title="+Expense"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        >
+    </item>
+    <item
+        android:id="@+id/income"
+        android:title="+Balance"
+        android:orderInCategory="200"
+        app:showAsAction="always"
+        >
+    </item>
+
+    <item
+        android:id="@+id/addCategory"
+        android:icon="@drawable/ic_device_hub"
+        android:title="+Category"
+        android:orderInCategory="300"
+        app:showAsAction="always"
+        >
+    </item>
+
+    <item
+        android:id="@+id/reports"
+        android:title="+Reports"
+        android:icon="@drawable/ic_insert_chart"
+        android:orderInCategory="400"
+        app:showAsAction="always"
+        >
+    </item>
+
+
+
+
+</menu>

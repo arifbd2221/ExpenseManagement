@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        >
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backup To SD"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/backup"
+            android:background="?selectableItemBackground"
+            />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Restore From SD"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@android:color/black"
+            android:background="?selectableItemBackground"
+            android:id="@+id/restore"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorSettings" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Backup To Drive"
+            android:textSize="20sp"
+            android:id="@+id/driveBackup"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Restore From Drive"
+            android:textAppearance="?android:textAppearance"
+            android:textColor="@android:color/black"
+            android:background="?selectableItemBackground"
+            android:id="@+id/Drestore"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorSettings" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textAppearance="?android:textAppearance"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:background="?selectableItemBackground"
+                />
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorSettings" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resset DataBase Records"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/resset"
+            android:background="?selectableItemBackground"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

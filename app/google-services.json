@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "559542868865",
+    "project_id": "firebase-count-on-it"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559542868865:android:80f9d54fb023f4a3",
+        "android_client_info": {
+          "package_name": "com.countonit.user.swipetabpractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559542868865-r18um31915k2m6se854l8h2j6r0ha9mp.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "559542868865-o5d6pb8duncs237l9nef414r33kfvpd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.countonit.user.swipetabpractice",
+            "certificate_hash": "c51cdf8fb9a13b1a4dd96a06f8483d0262610fa7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkU5XZPb1U64SJDl6HwYrGvjkoG6Hoeck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

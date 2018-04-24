@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout1"
+                >
+
+
+                <com.github.lzyzsd.circleprogress.DonutProgress
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/donut"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/donut"
+                    android:id="@+id/layout2"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INCOME"
+                        android:textSize="20sp"
+                        android:id="@+id/tIncome"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="BUDGET"
+                        android:id="@+id/tBudget"
+                        android:layout_marginTop="2dp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="EXPENSE"
+                        android:id="@+id/tExpense"
+                        android:layout_marginTop="2dp"
+                        android:textAppearance="@style/TextAppearance.FontPath"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/layout2"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000$"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/hIncome"
+                        android:padding="4dp"
+                        android:maxLines="1"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000$"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/hBudget"
+                        android:padding="4dp"
+                        android:maxLines="1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5000$"
+                        android:textSize="15sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/hExpense"
+                        android:padding="4dp"
+                        android:maxLines="1"
+                        />
+
+                </LinearLayout>
+
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout2"
+                    android:indeterminate="false"
+                    android:layout_marginLeft="157dp"
+                    android:id="@+id/progressbar"
+                    android:progressTint="@color/colorAccent"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="10dp"
+                    android:progressDrawable="@drawable/greenprogressbar" />
+                />
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/recycler"
+                ></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavViewbar"
+        android:layout_gravity="bottom"
+        android:background="#FFF"
+        app:menu="@menu/menu_bottom_toolbar"
+        ></com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+    <!--<include layout="@layout/bottom_toolbar"
+        android:id="@+id/includeBottmBar"
+        android:layout_gravity="bottom"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"></include>-->
+
+</android.support.design.widget.CoordinatorLayout>

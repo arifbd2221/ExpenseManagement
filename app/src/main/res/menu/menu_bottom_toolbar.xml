@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/balance"
+        android:title="Balance"
+        android:icon="@drawable/amount"
+        ></item>
+
+    <item
+        android:id="@+id/love"
+        android:title="Love It!"
+        android:icon="@drawable/love"
+        ></item>
+
+    <item
+        android:id="@+id/add_expense"
+        android:title="Add Expense"
+        android:icon="@drawable/addexpense"
+        ></item>
+
+
+</menu>

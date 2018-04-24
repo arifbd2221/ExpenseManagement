@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Personal Financial Dairy</string>
+    <string name="ad_id_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id">ca-app-pub-8750090969618404/7537984029</string>
+    <string name="message">Are You Sure Want To Reset All Amounts To 0 !!!!</string>
+    <string name="alert">Oooops...You\'ve Already Stored This Month Expenses...Try Next Month</string>
+    <string name="alert_msg">Are You Sure To Reste All Amounts To 0!!!!</string>
+    <string name="slide_1_title">Dear!</string>
+    <string name="slide_1_desc">The easiest way to plan your budget and keep controll over your finances</string>
+    <string name="slide_2_title">Start By Adding Balance</string>
+    <string name="slide_2_desc">Set your balance first. At the bottom you\'ll find \'Balance\' option. Click on it ,
+        provide your income source then your Amount of balance. After that click on save button.
+        Great now you\'re good to go. ( Next time if you have same income source that you\'ve provided , from \'select income source\' you can select it.
+        No need to type it again.</string>
+    <string name="slide_3_title">Create Expenses</string>
+    <string name="slide_3_desc">
+Create your expenses. At the bottom you\'ll find \'Add Expense\' option. Click on it.
+        Now provide your expense category name. ( eg: TRANSPORT ).
+        Provide your expense name ( eg: Bus ). Provide your budget for this expense. ( eg: 1000 ).
+        Then click on \'Add\' button. Congratulations you\'ve successfully created your very first expense.
+Note : Budget is an entity which means that , how much of amount you\'re going to spend for a particular month.
+    </string>
+    <string name="slide_4_title">Lets Go</string>
+    <string name="slide_4_desc">Lets enjoy your daily expenses management through our handsome application</string>
+    <string name="next">Next</string>
+
+    <string name="speech_not_supported">Sorry!! your device does not support voice system</string>
+    <string name="speech_prompt">Say Something!!!!</string>
+
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="start">Start</string>
+
+
+    <string-array name="month">
+        <item>Select Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <string name="devInfo">
+        Mohidul Hoque Arif\n
+        Joy Kumar Pal\n
+
+        \nA Product From MangoSoft
+    </string>
+    <string name="Sign_in">Save</string>
+
+
+    <string-array name="symbols1">
+
+        <item>Tk</item>
+        <item>₹</item>
+        <item>₨</item>
+        <item>$</item>
+        <item>$</item>
+        <item>$</item>
+        <item>₽</item>
+        <item>¥</item>
+        <item>£</item>
+        <item>kr</item>
+
+
+    </string-array>
+
+
+    <string-array name="currencySymbols1">
+
+        <item>Bangladesh BDT</item>
+        <item>India ₹</item>
+        <item>Pakistan ₨</item>
+        <item>USA $</item>
+        <item>Canada $</item>
+        <item>Australia $</item>
+        <item>Russia ₽</item>
+        <item>Japan ¥</item>
+        <item>England £</item>
+        <item>Norway kr</item>
+
+
+    </string-array>
+
+
+    <string name="agreement">Do you wish to Send This Agrrement To</string>
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+
+    <string name="BalanceInfo">
+        \n* Provide The Income Source. eg: BUSINESS.\n
+        * Provide The Income Amount. eg: 20000\n
+        * If You Have Previous Income Source Then Select It From The Top Option.
+    </string>
+
+    <string name="ExpenseCreation">
+        \n* Provide The Expense name. eg: BUS.
+        \n* Provide The Budget For This Expense. eg: 2000
+        \n* Provide The Expense Category. eg: TRANSPORT
+        \n* If You Have Already The Category Then Select It From The Top Option
+    </string>
+
+
+</resources>

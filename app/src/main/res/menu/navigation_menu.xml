@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/egallery"
+        android:title="Expense Gallery"
+        android:checkable="true"
+        android:orderInCategory="10"
+        android:icon="@drawable/gallery"
+        ></item>
+
+
+    <item
+        android:id="@+id/payee"
+        android:title="Payee"
+        android:icon="@drawable/payee"
+        android:checkable="true"
+        android:orderInCategory="50"
+        ></item>
+
+    <item
+        android:id="@+id/payer"
+        android:title="Payer"
+        android:orderInCategory="100"
+        android:icon="@drawable/payer"
+        android:checkable="true"
+        ></item>
+
+    <item
+        android:id="@+id/Privacy"
+        android:title="Privacy"
+        android:orderInCategory="120"
+        android:icon="@drawable/privacy"
+        android:checkable="true"
+        ></item>
+
+    <item
+        android:title="Design Expense"
+        >
+    <menu>
+        <item
+            android:id="@+id/create_expense"
+            android:title="Expense List"
+            android:checkable="true"
+            android:orderInCategory="200"
+            android:icon="@drawable/addexpense"
+            ></item>
+    </menu>
+    </item>
+
+    <item
+        android:title="My Transcation"
+        >
+        <menu>
+
+            <item
+                android:id="@+id/report"
+                android:title="Statistic Reports"
+                android:checkable="true"
+                android:orderInCategory="400"
+                android:icon="@drawable/statistic"
+                ></item>
+            <item
+                android:id="@+id/daily_report"
+                android:title="Report on Today"
+                android:checkable="true"
+                android:icon="@drawable/statistic"
+                android:orderInCategory="500"
+                ></item>
+            <item
+                android:id="@+id/custom_eport"
+                android:title="Custom report"
+                android:checkable="true"
+                android:icon="@drawable/statistic"
+                android:orderInCategory="600"
+                ></item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/tools"
+        android:title="Tools"
+        android:icon="@drawable/setting"
+        android:checkable="true"
+        android:orderInCategory="700"
+        >
+    </item>
+
+    <item
+        android:id="@+id/setting"
+        android:title="Settings"
+        android:checkable="true"
+        android:icon="@drawable/settings"
+        android:orderInCategory="800"
+        >
+    </item>
+
+  <!--  <item
+        android:id="@+id/priv_policy"
+        android:title="Privacy Policy"
+        android:checkable="true"
+        android:icon="@drawable/help"
+        android:orderInCategory="80"
+        >
+    </item>-->
+
+    <item
+        android:id="@+id/help"
+        android:title="How It Works"
+        android:checkable="true"
+        android:icon="@drawable/help"
+        android:orderInCategory="900"
+        ></item>
+
+    <item
+        android:title="FeedBack"
+        android:id="@+id/feedback"
+        android:checkable="true"
+        android:orderInCategory="1000"
+        android:icon="@drawable/feedback"
+        ></item>
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        android:checkable="true"
+        android:orderInCategory="1100"
+        android:icon="@drawable/about"
+        ></item>
+
+</menu>

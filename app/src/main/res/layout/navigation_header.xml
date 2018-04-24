@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="190dp"
+    android:layout_width="match_parent"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Month Name + Date"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:id="@+id/month_date"
+           android:textColor="@color/colorShop"
+           android:layout_centerInParent="true"
+           />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:fontFamily="sans-serif"
+        android:text="Expense Management"
+        android:textColor="@color/bg_screen1"
+        android:layout_below="@+id/month_date"
+        android:layout_centerInParent="true"
+        android:id="@+id/name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Product From MangoSoft"
+        android:textColor="@color/bg_screen1"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/name"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
+
+
+
+
+</FrameLayout>
