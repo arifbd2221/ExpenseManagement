@@ -12,7 +12,3 @@ user can upload the database into google drive storage.
 This application has notification enabled, which notify user about the current day's  expense details at night.
 
 This application is now live on google play store
- 
-    
-
-https://play.google.com/store/apps/details?id=com.countonit.user.swipetabpractice
